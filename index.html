@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cold ring</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="konva.min.js"></script>
+</head>
+<body>
+    <div class="screen">
+        <h1>Create your beautiful garden</h1>
+        <p id="start" class="start">Go to creator!</p>
+    </div>
+    <div class="screen--two">
+        <div class="screen-1">
+            <div class="screen-1__styles">
+                <label class="input-style-button">
+                    <h2>Input the coors & radius of garden & trees</h2>
+                    <input class="but__1" type="text" id="inputTreeX" placeholder="input х">
+                    <input class="but__1" type="text" id="inputTreeY" placeholder="input у">
+                    <input class="but__1" type="text" id="inputRadius" placeholder="input radius">
+                    <button class="but__2" id="btnInput">+</button>
+                </label>
+                <button class="but__2 btn" id="startBtn1">Press to start</button>
+            </div>
+            <div class="outputValues">
+                <p class="outputValues">Input coors: </p>
+                <p class="outputValues">Coors of triangle</p>
+                <p class="outputValues"></p>
+            </div>
+        </div>
+        <div class="game-desk">
+            <div class="container">
+                <div id="root"></div>
+            </div>
+            <input type="range" min="10" max="1000" id="inputZoom" value="100">
+        </div>
+<!--        <div class="authors-block hidden">-->
+<!--            <h3>Авторы</h3>-->
+<!--            <span>Седых Катерина</span> <br>-->
+<!--            <span>Шувалова Мария</span> <br>-->
+<!--            <span>Ларин Дмитрий</span> <br>-->
+<!--            <span>Иванникова Александра</span> <br>-->
+<!--            <span>Прошина Елизавета</span> <br>-->
+<!--            <p>Лич Сандро объявил войну королю Ада. И теперь полчища демонов-->
+<!--                ведут ожесточённую битву против армии нежити Сандро. Сандро в-->
+<!--                совершенстве владеет магией огня, но созданиям Ада огонь не причиняет-->
+<!--                никакого урона. Поэтому Сандро решил использовать против них заклинание-->
+<!--                «Кольцо холода». Это заклинание создаёт на поле боя непробиваемую-->
+<!--                ледяную стену в форме окружности. Демоны, которых задела ледяная стена,-->
+<!--                мгновенно погибают, а те демоны, которые оказались окружёнными стеной,-->
+<!--                хоть и остаются живы, более не могут принимать участия в битве.-->
+<!--                Сандро может мгновенно телепортироваться в любую точку поля боя и-->
+<!--                применить в ней «Кольцо холода». В этом случае возникнет ледяная стена с-->
+<!--                центром в той точке, где будет находиться Сандро. Учтите, что магии Сандро-->
+<!--                хватит на создание стены радиусом не более 10000 метров. Теперь он хочет-->
+<!--                так выбрать радиус заклинания и точку, куда он должен телепортироваться,-->
+<!--                чтобы хотя бы один демон был убит, а все демоны, оставшиеся в живых,-->
+<!--                были заключены внутрь стены.</p>-->
+<!--        </div>-->
+    </div>
+
+    <script src="./styles/animation.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
